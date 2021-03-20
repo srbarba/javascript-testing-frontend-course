@@ -1,9 +1,0 @@
-{
-  "extends": "../tsconfig.json",
-  "compilerOptions": {
-    "module": "commonjs",
-    "types": ["node", "jest"]
-  },
-  "files": ["test-setup.ts"],
-  "include": ["**/*.spec.ts", "**/*.d.ts"]
-}

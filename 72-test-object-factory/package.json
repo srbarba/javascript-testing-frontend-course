@@ -6,6 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "vue-cli-service test:unit",
+    "test:leaks": "vue-cli-service test:unit --no-cache --logHeapUsage",
+    "test:leaks:solved": "node --expose-gc ./node_modules/@vue/cli-service/bin/vue-cli-service.js test:unit --no-cache --logHeapUsage",
+    "test:ci:leaks": "vue-cli-service test:unit --runInBand --no-cache --logHeapUsage",
+    "test:ci:leaks:solved": "node --expose-gc ./node_modules/@vue/cli-service/bin/vue-cli-service.js test:unit --runInBand --no-cache --logHeapUsage",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
